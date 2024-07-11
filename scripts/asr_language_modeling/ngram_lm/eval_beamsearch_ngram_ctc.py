@@ -87,11 +87,11 @@ class EvalBeamSearchNGramConfig:
     Evaluate an ASR model with beam search decoding and n-gram KenLM language model.
     """
     # # The path of the '.nemo' file of the ASR model or the name of a pretrained model (ngc / huggingface)
-    nemo_model_file: str = MISSING
+    nemo_model_file: str = "checkpoint/QuartzNet-Model-EG_ARA.nemo"
 
     # File paths
-    input_manifest: str = MISSING  # The manifest file of the evaluation set
-    kenlm_model_file: Optional[str] = None  # The path of the KenLM binary model file
+    input_manifest: str = "val_manifest_EGAR.json"  # The manifest file of the evaluation set
+    kenlm_model_file: Optional[str] = "EGP_AR_KLM.klm"  # The path of the KenLM binary model file
     preds_output_folder: Optional[str] = None  # The optional folder where the predictions are stored
     probs_cache_file: Optional[str] = None  # The cache file for storing the logprobs of the model
 
@@ -331,7 +331,12 @@ def main(cfg: EvalBeamSearchNGramConfig):
             with torch.no_grad():
                 if isinstance(asr_model, EncDecHybridRNNTCTCModel):
                     asr_model.cur_decoder = 'ctc'
-                all_logits = asr_model.transcribe(audio_file_paths, batch_size=cfg.acoustic_batch_size, logprobs=True)
+                # all_logits = asr_model.transcribe(audio_file_paths, batch_size=cfg.acoustic_batch_size, logprobs=True)
+                Logits_hyps = asr_model.transcribe(
+                audio_file_paths, batch_size=cfg.acoustic_batch_size, return_hypotheses=True
+                )  # type: List[nemo_asr.parts.Hypothesis]
+            
+                all_logits = [hyp.alignments for hyp in Logits_hyps]                    
 
         all_probs = all_logits
         if cfg.probs_cache_file:
@@ -350,7 +355,7 @@ def main(cfg: EvalBeamSearchNGramConfig):
         if isinstance(asr_model, EncDecHybridRNNTCTCModel):
             pred_text = asr_model.ctc_decoding.ctc_decoder_predictions_tensor(preds_tensor)[0][0]
         else:
-            pred_text = asr_model._wer.decoding.ctc_decoder_predictions_tensor(preds_tensor)[0][0]
+            pred_text = asr_model.decoding.ctc_decoder_predictions_tensor(preds_tensor)[0][0]
 
         if cfg.text_processing.do_lowercase:
             pred_text = punctuation_capitalization.do_lowercase([pred_text])[0]
