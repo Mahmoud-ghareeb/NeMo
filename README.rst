@@ -36,6 +36,11 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
 
 .. code-block:: bash
 
+    conda create -n nemo_lm python==3.11
+    conda activate nemo_lm
+
+.. code-block:: bash
+
     apt-get update && apt-get install -y libsndfile1 ffmpeg
     git clone https://github.com/Mahmoud-ghareeb/NeMo.git
     cd NeMo
