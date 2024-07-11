@@ -43,6 +43,16 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
 
 If you only want the toolkit without the additional Conda-based dependencies, you can replace ``reinstall.sh`` with ``pip install -e .`` when your PWD is the root of the NeMo repository.
 
+KenLM
+^^^^
+
+to install the LM do the following.
+
+Run the following code:
+
+.. code-block:: bash
+
+  ./install_beamsearch_decoders.sh
 
 RNNT
 ^^^^
