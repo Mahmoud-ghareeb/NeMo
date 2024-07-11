@@ -63,7 +63,7 @@ export KENLM_ROOT=$NEMO_PATH/decoders/kenlm
 cd ..
 
 # install Flashlight
-git clone https://github.com/flashlight/text && cd text
-python setup.py bdist_wheel
-pip install dist/*.whl
-cd ..
+# git clone https://github.com/flashlight/text && cd text
+# python setup.py bdist_wheel
+# pip install dist/*.whl
+# cd ..
