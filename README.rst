@@ -57,7 +57,7 @@ Run the following code:
 
 .. code-block:: bash
 
-  ./install_beamsearch_decoders.sh
+  sh install_beamsearch_decoders.sh
 
 RNNT
 ^^^^
