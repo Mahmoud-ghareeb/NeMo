@@ -5,27 +5,6 @@ Requirements
 * Pytorch 1.13.1 or above
 * NVIDIA GPU (if you intend to do model training)
 
-Developer Documentation
------------------------
-
-.. |main| image:: https://readthedocs.com/projects/nvidia-nemo/badge/?version=main
-  :alt: Documentation Status
-  :scale: 100%
-  :target: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/
-
-.. |stable| image:: https://readthedocs.com/projects/nvidia-nemo/badge/?version=stable
-  :alt: Documentation Status
-  :scale: 100%
-  :target:  https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/stable/
-
-+---------+-------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Version | Status      | Description                                                                                                                              |
-+=========+=============+==========================================================================================================================================+
-| Latest  | |main|      | `Documentation of the latest (i.e. main) branch. <https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/>`_                  |
-+---------+-------------+------------------------------------------------------------------------------------------------------------------------------------------+
-| Stable  | |stable|    | `Documentation of the stable (i.e. most recent release) branch. <https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/stable/>`_ |
-+---------+-------------+------------------------------------------------------------------------------------------------------------------------------------------+
-
 Install NeMo Framework
 ----------------------
 
@@ -44,9 +23,7 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
     apt-get update && apt-get install -y libsndfile1 ffmpeg
     git clone https://github.com/Mahmoud-ghareeb/NeMo.git
     cd NeMo
-    ./reinstall.sh
-
-If you only want the toolkit without the additional Conda-based dependencies, you can replace ``reinstall.sh`` with ``pip install -e .`` when your PWD is the root of the NeMo repository.
+    pip install -e .
 
 KenLM
 ^^^^
