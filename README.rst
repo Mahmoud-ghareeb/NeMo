@@ -15,7 +15,7 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
 
 .. code-block:: bash
 
-    conda create -n nemo_lm python==3.11
+    conda create -n nemo_lm python==3.10
     conda activate nemo_lm
 
 .. code-block:: bash
