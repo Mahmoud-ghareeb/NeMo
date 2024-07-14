@@ -25,7 +25,7 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
     pip install Cython packaging
     git clone https://github.com/Mahmoud-ghareeb/NeMo.git
     cd NeMo
-    /reinstall.sh
+    ./reinstall.sh
     
 
 2. Beam Search Decoders
