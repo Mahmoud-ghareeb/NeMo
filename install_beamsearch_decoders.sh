@@ -50,6 +50,7 @@ export KENLM_ROOT=$NEMO_PATH/decoders/kenlm
 cd ..
 
 #setup the folder
+cd $NEMO_PATH
 mkdir ../checkpoints
 mkdir ../kenlm_binaries
 mv test_model.ipynb ../
