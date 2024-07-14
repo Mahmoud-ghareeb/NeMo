@@ -60,6 +60,10 @@ to generate the LM do the following
     bin/build_binary text.arpa text.binary
 
 4. copy the generated "text.binary" into the "kenlm_binaries" folder
+.. code-block:: bash
+
+    #suggested code
+    cp text.binary ../../../../kenlm_binaries/
 
 Test the model
 ^^^^
