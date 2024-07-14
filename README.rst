@@ -8,7 +8,7 @@ Requirements
 Install NeMo Framework With Beam Search
 ----------------------
 
-1. Build from PIP
+1. Build from Source
 ^^^^^^^^^^^^^^^^^
 
 If you want to clone the NeMo GitHub repository and contribute to NeMo open-source development work, use the following installation method:
@@ -21,8 +21,9 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
 .. code-block:: bash
 
     apt-get update && apt-get install -y libsndfile1 ffmpeg
-    pip install Cython packaging
-    pip install nemo_toolkit['asr']
+    git clone https://github.com/Mahmoud-ghareeb/NeMo.git
+    cd NeMo
+    pip install -e .
 
 2. Beam Search Decoders
 ^^^^
@@ -32,9 +33,7 @@ to install the LM do the following.
 Run the following code:
 
 .. code-block:: bash
-    
-    git clone https://github.com/Mahmoud-ghareeb/NeMo.git
-    cd NeMo
+
     sh install_beamsearch_decoders.sh
 
 after this, you will have in your base the following files/folders
