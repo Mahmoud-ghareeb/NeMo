@@ -20,10 +20,13 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
 
 .. code-block:: bash
 
-    apt-get update && apt-get install -y libsndfile1 ffmpeg
+    sudo apt-get update && sudo apt-get install -y libsndfile1 ffmpeg
+    sudo apt-get install -y cmake
+    pip install Cython packaging
     git clone https://github.com/Mahmoud-ghareeb/NeMo.git
     cd NeMo
-    ./reinstall.sh
+    /reinstall.sh
+    
 
 2. Beam Search Decoders
 ^^^^
@@ -33,7 +36,7 @@ to install the LM do the following.
 Run the following code:
 
 .. code-block:: bash
-
+    
     sh install_beamsearch_decoders.sh
 
 after this, you will have in your base the following files/folders
