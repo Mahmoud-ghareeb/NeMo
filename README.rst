@@ -24,7 +24,7 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
     pip install Cython packaging
     pip install nemo_toolkit['asr']
 
-KenLM
+Beam Search Decoders
 ^^^^
 
 to install the LM do the following.
@@ -37,18 +37,28 @@ Run the following code:
     cd NeMo
     sh install_beamsearch_decoders.sh
 
-RNNT
+after this, you will have in your base the following files/folders
+1. checkpoints
+2. kenlm_binaries
+3. NeMo
+4. test_model.ipynb
+
+Kenlm
 ^^^^
 
-For optimal performance of a Recurrent Neural Network Transducer (RNNT), install the Numba package from Conda.
+to generate the LM do the following
 
-Run the following code:
+1. copy your text file to => NeMo/decoders/kenlm/build/
+2. cd into => NeMo/decoders/kenlm/build/
+
+3. Run the following code:
 
 .. code-block:: bash
+    
+    bin/lmplz -o 5 <data.txt >text.arpa
+    bin/build_binary text.arpa text.binary
 
-  conda remove numba
-  pip uninstall numba
-  conda install -c conda-forge numba
+4. copy the generated "text.binary" into the "kenlm_binaries" folder
 
 
 Future Work
