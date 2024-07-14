@@ -5,10 +5,10 @@ Requirements
 * Pytorch 1.13.1 or above
 * NVIDIA GPU (if you intend to do model training)
 
-Install NeMo Framework
+Install NeMo Framework With Beam Search
 ----------------------
 
-Build from PIP
+1. Build from PIP
 ^^^^^^^^^^^^^^^^^
 
 If you want to clone the NeMo GitHub repository and contribute to NeMo open-source development work, use the following installation method:
@@ -24,7 +24,7 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
     pip install Cython packaging
     pip install nemo_toolkit['asr']
 
-Beam Search Decoders
+2. Beam Search Decoders
 ^^^^
 
 to install the LM do the following.
@@ -43,7 +43,7 @@ after this, you will have in your base the following files/folders
 3. NeMo
 4. test_model.ipynb
 
-Kenlm
+3. Kenlm
 ^^^^
 
 to generate the LM do the following
@@ -66,7 +66,7 @@ to generate the LM do the following
     #suggested command
     cp text.binary ../../../../kenlm_binaries/
 
-Test the model
+4. Test the model
 ^^^^
 
 Now Read The test_model.ipynb file and adjust it according to your data and paths ...
