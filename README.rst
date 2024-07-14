@@ -23,7 +23,7 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
     apt-get update && apt-get install -y libsndfile1 ffmpeg
     git clone https://github.com/Mahmoud-ghareeb/NeMo.git
     cd NeMo
-    pip install -e .
+    ./reinstall.sh
 
 2. Beam Search Decoders
 ^^^^
