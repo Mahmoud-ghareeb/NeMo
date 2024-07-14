@@ -32,6 +32,7 @@ to install the LM do the following.
 Run the following code:
 
 .. code-block:: bash
+    
     git clone https://github.com/Mahmoud-ghareeb/NeMo.git
     cd NeMo
     sh install_beamsearch_decoders.sh
