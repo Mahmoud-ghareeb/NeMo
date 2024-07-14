@@ -21,9 +21,8 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
 .. code-block:: bash
 
     apt-get update && apt-get install -y libsndfile1 ffmpeg
-    git clone https://github.com/Mahmoud-ghareeb/NeMo.git
-    cd NeMo
-    pip install -e .
+    pip install Cython packaging
+    pip install nemo_toolkit['asr']
 
 KenLM
 ^^^^
@@ -33,8 +32,9 @@ to install the LM do the following.
 Run the following code:
 
 .. code-block:: bash
-
-  sh install_beamsearch_decoders.sh
+    git clone https://github.com/Mahmoud-ghareeb/NeMo.git
+    cd NeMo
+    sh install_beamsearch_decoders.sh
 
 RNNT
 ^^^^
