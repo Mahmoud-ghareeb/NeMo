@@ -54,7 +54,8 @@ to generate the LM do the following
 3. Run the following code:
 
 .. code-block:: bash
-    
+
+    #change data.txt to your file name
     bin/lmplz -o 5 <data.txt >text.arpa
     bin/build_binary text.arpa text.binary
 
