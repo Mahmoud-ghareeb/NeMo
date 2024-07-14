@@ -8,7 +8,7 @@ Requirements
 Install NeMo Framework
 ----------------------
 
-Build from Source
+Build from PIP
 ^^^^^^^^^^^^^^^^^
 
 If you want to clone the NeMo GitHub repository and contribute to NeMo open-source development work, use the following installation method:
