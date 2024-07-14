@@ -48,3 +48,8 @@ python setup.py install --max_order=$KENLM_MAX_ORDER
 export KENLM_LIB=$NEMO_PATH/decoders/kenlm/build/bin
 export KENLM_ROOT=$NEMO_PATH/decoders/kenlm
 cd ..
+
+#setup the folder
+mkdir ../checkpoints
+mkdir ../kenlm_binaries
+mv test_model.ipynb ../
