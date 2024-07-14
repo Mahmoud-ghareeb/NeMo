@@ -60,6 +60,10 @@ to generate the LM do the following
 
 4. copy the generated "text.binary" into the "kenlm_binaries" folder
 
+Test the model
+^^^^
+
+Now Read The test_model.ipynb file and adjust it according to your data and paths ...
 
 Future Work
 -----------
