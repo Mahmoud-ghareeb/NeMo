@@ -63,7 +63,7 @@ to generate the LM do the following
 
 .. code-block:: bash
 
-    #suggested code
+    #suggested command
     cp text.binary ../../../../kenlm_binaries/
 
 Test the model
