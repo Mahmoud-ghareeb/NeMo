@@ -39,11 +39,11 @@ Run the following code:
     
     sh install_beamsearch_decoders.sh
 
-after this, you will have in your base the following files/folders
-1. checkpoints
-2. kenlm_binaries
-3. NeMo
-4. test_model.ipynb
+after this, you will have in your base the following files/folders \n
+1. checkpoints \n
+2. kenlm_binaries \n
+3. NeMo \n
+4. test_model.ipynb \n
 
 3. Kenlm
 ^^^^
