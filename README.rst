@@ -39,7 +39,7 @@ Run the following code:
     
     sh install_beamsearch_decoders.sh
 
-after this, you will have in your base the following files/folders
+after this, you will have in your base folder the following files/folders
 ^^^^
 
 1. checkpoints
