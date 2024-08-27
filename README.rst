@@ -23,6 +23,8 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
     sudo apt-get update && sudo apt-get install -y libsndfile1 ffmpeg
     sudo apt-get install -y cmake
     pip install Cython packaging
+    mkdir nemo_infer
+    cd nemo_infer
     git clone https://github.com/Mahmoud-ghareeb/NeMo.git
     cd NeMo
     ./reinstall.sh
