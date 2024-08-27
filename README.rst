@@ -39,7 +39,7 @@ Run the following code:
 
 .. code-block:: bash
     
-    sudo sh install_beamsearch_decoders.sh
+    sh install_beamsearch_decoders.sh
 
 after this, you will have in your base folder the following files/folders
 ^^^^
