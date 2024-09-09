@@ -47,11 +47,6 @@ export KENLM_LIB=$NEMO_PATH/decoders/kenlm/build/bin
 export KENLM_ROOT=$NEMO_PATH/decoders/kenlm
 cd ..
 
-git clone https://github.com/flashlight/text && cd text
-python setup.py bdist_wheel
-pip install dist/*.whl
-cd ..
-
 #setup the folder
 cd $NEMO_PATH
 mkdir ../checkpoints
