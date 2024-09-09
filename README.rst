@@ -28,6 +28,7 @@ If you want to clone the NeMo GitHub repository and contribute to NeMo open-sour
     git clone https://github.com/Mahmoud-ghareeb/NeMo.git
     cd NeMo
     ./reinstall.sh
+    pip install huggingface_hub==0.23.5
     
 
 2. Beam Search Decoders
